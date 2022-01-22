@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FECC02",
+                        offBlack: "#131313",
+                        darkGray: "#4E4E4E",
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', "Cursive"],
+                        montserrat: ['Montserrat', "sans-serif"]
+                    }
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="w-full h-20 flex justify-center bg-white absolute ">
+        <nav class="font-bebas w-4/5 flex justify-between  h-full items-center">
+            <h1 class="text-3xl">Jhaka naka production</h1>
+            <ul class="gap-x-5 hidden md:flex">
+                <a href="#about">
+                    <li class="text-xl cursor-pointer">About Us</li>
+                </a>
+                <a>
+                    <li class="text-xl cursor-pointer">Our Movies</li>
+                </a>
+                <a href="#movies">
+                    <li class="text-xl cursor-pointer">Services</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="h-screen bg-[url('./images/banner.jpg')] bg-cover flex items-center">
+            <div class="mx-10 font-bebas w-full md:w-2/4 text-white">
+                <p>Movie production studio</p>
+                <h1 class="md:text-7xl text-5xl">Films Made To</h1>
+                <h1 class="md:text-7xl text-5xl text-yellow">Perfection</h1>
+                <p class="font-montserrat mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellat
+                    et vitae labore praesentium asperiores necessitatibus porro ullam nihil maiores.</p>
+                <button
+                    class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow transition-all">Discover
+                    More</button>
+            </div>
+        </section>
+        <!-- About uzzz -->
+        <section class="p-10" id="about">
+            <div class="border-2 border-offBlack p-10">
+                <div class="lg:flex gap-x-10">
+                    <div
+                        class="w-full lg:w-2/4 h-[300px] md:h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end mb-10 ">
+                        <h1
+                            class="font-bebas text-xl drop-shadow-2xl py-2 rounded-md -mb-6  md:text-4xl text-offBlack bg-white w-11/12 text-center">
+                            23 years of Experience</h1>
+                    </div>
+                    <div class="w-full lg:w-2/4 h-full font-bebas">
+                        <p>ABOUT US</p>
+                        <h1 class="md:text-7xl text-5xl">FILMING EXPERIENCE</h1>
+                        <h1 class="md:text-7xl text-5xl">JUST GOT BETTER</h1>
+                        <p class="font-montserrat mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Praesentium quo eum voluptas
+                            inventore dolores quam ad enim, laboriosam quas, excepturi cumque assumenda illum totam
+                            eaque amet iusto? Velit commodi eligendi ipsum nam sequi ex sed nihil labore in totam sint
+                            veniam odio voluptate consectetur voluptatem accusantium, harum tempora minus atque.</p>
+                        <button
+                            class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow transition-all border-black text-black">Discover
+                            More</button>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-x-20 mt-10">
+                    <div class="border-t-4 border-offBlack w-full lg:mb-0 mb-20">
+                        <h1 class="font-bebas text-5xl mt-5">OUR VISION</h1>
+                        <p class="font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil!
+                            Asperiores, culpa nam. Debitis cupiditate repudiandae molestias minus libero laborum?</p>
+                    </div>
+                    <div class="border-t-4 border-offBlack w-full lg:mb-0  mb-20">
+                        <h1 class="font-bebas text-5xl mt-5">OUR MISSION</h1>
+                        <p class="font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil!
+                            Asperiores, culpa nam. Debitis cupiditate repudiandae molestias minus libero laborum?</p>
+                    </div>
+                    <div class="border-t-4 border-offBlack w-full lg:mb-0  mb-20">
+                        <h1 class="font-bebas text-5xl mt-5">OUR MOtTO</h1>
+                        <p class="font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil!
+                            Asperiores, culpa nam. Debitis cupiditate repudiandae molestias minus libero laborum?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Movies go brr -->
+        <section class="bg-darkGray h-full w-full p-10">
+            <!-- section HEADER -->
+            <div class="font-bebas text-white">
+                <p>OUR MOVIES</p>
+                <div class="md:flex items-center justify-between">
+                    <h1 class="md:text-7xl text-5xl">MOVIE COLLECTION</h1>
+                    <button
+                        class="border-2 px-5 font-bebas py-2 text-xl hover:bg-yellow hover:text-black hover:border-yellow transition-all border-white text-white md:mt-0 mt-5">See
+                        More Movies</button>
+                </div>
+            </div>
+            <!-- MOVIESSSSSSSSSSSSSSSS -->
+            <div>
+
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 mt-10 gap-10" id="movies">
+                    <div class="border-2 cursor-pointer border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5">
+
+                        <div
+                            class="w-full   h-full  bg-cover bg-center flex justify-center items-center group bg-[url('./images/tenet.jpg')]  group-hover relative">
+                            <div
+                                class="h-full w-full absolute top-0 left-0 z-1 right-0 bottom-0  bg-black opacity-75 group-hover:block hidden">
+                            </div>
+                            <h1 class="font-bebas  text-white text-3xl hidden z-10 group-hover:block">Tenet</h1>
+                        </div>
+
+                    </div>
+                    <div class="border-2 cursor-pointer border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5">
+                        <div
+                            class="w-full   h-full  bg-cover bg-center flex justify-center items-center group bg-[url('./images/tenet.jpg')]  group-hover relative">
+                            <div
+                                class="h-full w-full absolute top-0 left-0 z-1 right-0 bottom-0  bg-black opacity-75 group-hover:block hidden">
+                            </div>
+                            <h1 class="font-bebas  text-white text-3xl hidden z-10 group-hover:block">Tenet</h1>
+                        </div>
+                    </div>
+                    <div class="border-2 cursor-pointer border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5">
+                        <div
+                            class="w-full   h-full  bg-cover bg-center flex justify-center items-center group bg-[url('./images/tenet.jpg')]  group-hover relative">
+                            <div
+                                class="h-full w-full absolute top-0 left-0 z-1 right-0 bottom-0  bg-black opacity-75 group-hover:block hidden">
+                            </div>
+                            <h1 class="font-bebas  text-white text-3xl hidden z-10 group-hover:block">Tenet</h1>
+                        </div>
+                    </div>
+                    <div class="border-2 cursor-pointer border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5">
+                        <div
+                            class="w-full   h-full  bg-cover bg-center flex justify-center items-center group bg-[url('./images/tenet.jpg')]  group-hover relative">
+                            <div
+                                class="h-full w-full absolute top-0 left-0 z-1 right-0 bottom-0  bg-black opacity-75 group-hover:block hidden">
+                            </div>
+                            <h1 class="font-bebas  text-white text-3xl hidden z-10 group-hover:block">Tenet</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
